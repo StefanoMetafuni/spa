@@ -14,7 +14,7 @@ import Footer from 'components/layout/footer';
   var STOREFRONT_ACCESS_TOKEN = '2806a1109ba8d45ab291acaae9c18427';
   var STOREFRONT_ENDPOINT = 'https://' + SHOP_DOMAIN + '/api/' + API_VERSION + '/graphql.json';
 
-  function readCookiesAsString(awRegEx) {
+  function readCookiesAsString(awRegEx?: RegExp | string) {
     var aCookies = document.cookie.split(';');
     var cookies = [];
     for (var i = 0; i < aCookies.length; i++) {
